@@ -6,7 +6,7 @@ import tailwindPlugin from "./plugins/tailwind-config.js";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Franklin Kemta',
+  title: 'Welcome',
   tagline: 'Hey! I\'m Franklin. A Cloud DevOps and Software Engineer',
   favicon: 'img/favicon.ico',
 
@@ -63,21 +63,20 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: '#',
+          // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl:
-            'https://github.com/franklinkemta/dev',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   feedOptions: {
+        //     type: ['rss', 'atom'],
+        //     xslt: true,
+        //   },
+        //   editUrl: '#',
+        //   onInlineTags: 'warn',
+        //   onInlineAuthors: 'warn',
+        //   onUntruncatedBlogPosts: 'warn',
+        // },
       } satisfies Preset.Options,
     ],
   ],
@@ -90,20 +89,20 @@ const config: Config = {
     image: 'img/dev-social-card.jpg',
     navbar: {
       hideOnScroll: true,
-      title: 'Franklin',
+      title: 'Welcome',
       logo: {
-        alt: 'Franklin',
+        alt: 'Welcome Logo',
         src: 'img/logo.svg',
         className: 'ml-3 rounded-full border-2 border-primary',
       },
       items: [
-        { to: '/', label: 'Welcome', position: 'left' },
+        { to: '/', label: 'About me', position: 'left' },
         { to: '/projects', label: 'Projects', position: 'left' },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorials (Learn with me)',
+          label: 'Tutorials',
         },
         // { to: '/resume', label: '📃 Resume', position: 'right' },
         { href: 'https://linkedin.com/in/franklinkemta', label: 'Contact', position: 'right' },
@@ -118,7 +117,7 @@ const config: Config = {
       style: 'light',
       links: [
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} dev.franklinKemta, Built with Docusaurus.`,
+      copyright: `Franklin © ${new Date().getFullYear()}`,
     },
     colorMode: {
       defaultMode: 'light',

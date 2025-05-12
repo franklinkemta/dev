@@ -1,0 +1,48 @@
+---
+sidebar_position: 0
+title: Intro - Learn with Franklin
+---
+
+import React from 'react';
+import { Mail } from "lucide-react";
+
+export const GitHubContributions = ({ username }) => (
+    <div className="flex justify-center py-6 w-full border-y-2 border-y-primary">
+        <a href={`https://github.com/${username}`} target="__blank" className="hover:animate-pulse">
+        <div className="tooltip" data-tip={username}>
+            <img
+                src={`https://ghchart.rshah.org/219822/${username}`} // green (#219822)
+                alt={`${username}'s GitHub contribution chart`}
+                className="w-full max-w-2xl border border-gray-300 rounded-lg shadow-md"
+            />
+        </div>
+        </a>
+    </div>
+);
+
+# Tutorials
+
+<p className="text-lg font-medium"> Welcome | Bienvenue! <br /> Explore practical and interactive tutorials, project insights, and tips in Cloud, AI, FinTech and more. </p>
+
+<GitHubContributions username="franklinkemta" />
+
+## What you'll find Here
+
+- **Guides**: Clear, step-by-step tutorials  
+- **Projects**: Real-world lessons  
+- **Tips**: Proven best practices  
+- **Resources**: Tools and snippets  
+
+## Who It's For
+
+- **Beginners**: Simple starting points  
+- **Developers**: Skill-sharpening dives  
+- **Learners**: New tech and tools  
+
+## Get Started
+
+- Browse topics in the sidebar  
+- Try hands-on examples  
+- Share feedback  
+
+<a href="https://www.linkedin.com/in/franklinkemta/" target="__blank" className="btn btn-primary rounded-3xl mx-2"> <Mail/> Reach out Franklin </a> with ideas or questions. Let's learn and build together!

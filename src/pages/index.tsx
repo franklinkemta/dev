@@ -6,7 +6,6 @@ import HeroSection from '@site/src/components/Welcome/HeroSection';
 import WelcomeFeatures from '@site/src/components/Welcome/Features';
 
 
-
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -14,7 +13,10 @@ export default function Home(): ReactNode {
       title={`${siteConfig.title}`}
       description="<head> Welcome to my developer page <head />"
     >
-      <main className="w-full h-full">
+      <main className="flex flex-col h-full w-full">
+        <div className=''>
+
+        </div>
         <HeroSection />
         <WelcomeFeatures />
       </main>
