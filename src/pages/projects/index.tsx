@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import Layout from '@theme/Layout';
-import { ProjectList } from './projects';
+import { ProjectList } from '@site/src/constants/projects';
 
 type ProjectItem = {
     link: string;
