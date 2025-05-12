@@ -1,6 +1,0 @@
----
-title: My Skills
----
-
-# Skills
-

@@ -4,6 +4,12 @@
  * work well for content-centric websites.
  */
 
+@layer theme, base, components, utilities;
+@import 'tailwindcss/theme.css' layer(theme) important;
+@import 'tailwindcss/utilities.css' layer(utilities) important;
+
+@plugin "daisyui";
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;

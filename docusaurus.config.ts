@@ -1,12 +1,13 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import tailwindPlugin from "./plugins/tailwind-config.js";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Franklin',
-  tagline: 'Learn and Discover some cool stuff I am doing',
+  title: 'Franklin Kemta',
+  tagline: 'Hey! I\'m Franklin. A Cloud DevOps and Software Engineer',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -27,6 +28,13 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  // Enable Docusaurs Faster: https://github.com/facebook/docusaurus/issues/10556
+  future: { experimental_faster: true },
+
+  plugins: [
+    ['./plugins/tailwind-config.js', {}]
+  ],
 
   presets: [
     [
@@ -73,29 +81,32 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
+  themes: ['@docusaurus/theme-mermaid'],
+  markdown: {
+    mermaid: true,
+  },
   themeConfig: {
     // Replace with your project's social card
     image: 'img/dev-social-card.jpg',
     navbar: {
+      hideOnScroll: true,
       title: 'Franklin',
       logo: {
-        alt: 'Dev',
+        alt: 'Franklin',
         src: 'img/logo.svg',
+        className: 'ml-3 rounded-full border-2 border-primary',
       },
       items: [
-        { to: '/', label: '◉ Welcome', position: 'left' },
-        { to: '/skills', label: '🎯 Skills', position: 'left' },
-        { to: '/projects', label: '🗂 Projects', position: 'left' },
-        // { to: '/certifications', label: '☑️ Certifications', position: 'left' },
+        { to: '/', label: 'Welcome', position: 'left' },
+        { to: '/projects', label: 'Projects', position: 'left' },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '👨🏽‍💻 Tutorials',
+          label: 'Tutorials (Learn with me)',
         },
         // { to: '/resume', label: '📃 Resume', position: 'right' },
-        { href: 'https://linkedin.com/in/franklinkemta', label: '🤝 Contact', position: 'right' },
+        { href: 'https://linkedin.com/in/franklinkemta', label: 'Contact', position: 'right' },
         {
           href: 'https://github.com/franklinkemta',
           label: '☯︎ GitHub',
@@ -104,13 +115,13 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Franklin Kemta dev, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} dev.franklinKemta, Built with Docusaurus.`,
     },
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: 'light',
       disableSwitch: false,
     },
     prism: {
