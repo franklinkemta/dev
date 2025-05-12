@@ -15,17 +15,22 @@ export const Project = ({ title, description, img, link, old, skills }: ProjectI
     return (
         <a
             href={link}
-            className="card card-md min-h-80 bg-base-100 shadow-sm border-2 border-gray-400 hover:border-primary hover:opacity-85 hover:cursor-pointer"
+            className="card bg-base-100 shadow-sm border-2 border-gray-400 hover:border-primary hover:opacity-85 hover:cursor-pointer w-full max-w-full"
         >
-            <figure className="min-h-60 object-cover">
-                <img className="" src={img} alt={title} />
+            <figure className="w-full aspect-[4/3] m-0 p-0">
+                <img
+                    className="w-full h-full object-cover object-center"
+                    src={img}
+                    alt={title}
+                    loading="lazy"
+                />
             </figure>
-            <div className="card-body">
-                <h2 className="card-title">{title}</h2>
-                <p>{description}</p>
-                <div className="w-full gap-2">
+            <div className="card-body p-4">
+                <h2 className="card-title text-lg">{title}</h2>
+                <p className="text-sm">{description}</p>
+                <div className="flex flex-wrap gap-1">
                     {skills?.map((s) => (
-                        <div key={s} className="badge badge-outline badge-primary badge-md mr-1 mb-1 p-1">
+                        <div key={s} className="badge badge-outline badge-primary badge-sm px-2 py-1 mr-1 mb-1">
                             {s}
                         </div>
                     ))}
@@ -41,16 +46,16 @@ export default function Projects(): ReactNode {
             title="Projects"
             description="Showcasing my work in cloud, AI, and DevOps for innovative solutions."
         >
-            <main className="flex flex-col w-full p-8">
-                <h3 className="text-lg font-medium w-full">Recent Projects</h3>
-                <div className="grid grid-cols-4 gap-4 w-full">
+            <main className="flex flex-col w-full p-4 sm:p-8">
+                <h3 className="text-lg font-medium w-full mb-4">Recent Projects</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
                     {ProjectList.filter((p) => !p.old).map((p) => (
                         <Project key={p.title} {...p} />
                     ))}
                 </div>
-                <div className="divider my-2"></div>
-                <h3 className="text-lg font-medium">Other Projects (Old)</h3>
-                <div className="grid grid-cols-4 gap-4 w-full">
+                <div className="divider my-4"></div>
+                <h3 className="text-lg font-medium w-full mb-4">Other Projects (Old)</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
                     {ProjectList.filter((p) => p.old).map((p) => (
                         <Project key={p.title} {...p} />
                     ))}
