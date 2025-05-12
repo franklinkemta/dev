@@ -35,7 +35,7 @@ function HeroSection() {
                     </div>
                 </div>
                 <div className="hidden lg:block md:block">
-                    <a className="tooltip flex w-full hover:animate-pulse" href="#" data-tip="Chat with Me">
+                    <a className="tooltip flex w-full hover:animate-pulse" href="https://github.com/franklinkemta/" target="_blank" data-tip="Chat with Me">
                         <div className="avatar">
                             <div className="ring-primary ring-offset-base-100 min-w-60 rounded-full ring-2 ring-offset-2">
                                 <img src="img/logo.svg" />
