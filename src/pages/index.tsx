@@ -16,7 +16,7 @@ export default function Home(): ReactNode {
       <main className="flex flex-col h-full w-full items-center">
         <HeroSection />
         <SkillSection />
-        <div className="flex flex-col w-full items-center -mt-3 absolute bottom-3">
+        <div className="flex flex-col w-full items-center -mt-3">
           <a href="/dev/projects" className="btn btn-lg btn-outline border-2 border-primary rounded-3xl">
             View projects
           </a>
