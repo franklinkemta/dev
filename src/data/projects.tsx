@@ -83,7 +83,7 @@ export const ProjectList: ProjectItem[] = [
     {
         link: 'https://viize.ca/',
         title: 'Computer Vision CI/CD Pipeline',
-        img: 'https://dev.franklinkemta.com/images/projects/fullstack/ViizeTraffic.jpg',
+        img: 'img/projects/traffic.jpg',
         description: (
             <>
                 Set up CI/CD for AI microservices, halving RAM usage for video processing.
