@@ -11,31 +11,6 @@ type ProjectItem = {
 
 export const ProjectList: ProjectItem[] = [
     {
-        // link: 'https://github.com/consultantzero/fst-signal',
-        link: "img/projects/fib.png",
-        title: 'Fibonacci Signal Trader',
-        img: 'img/projects/fib.png',
-        description: (
-            <>
-                Built a dual-language tool for automated trading signal analysis using Fibonacci retracement and RSI/MACD, enhancing stock and crypto market trend detection.
-            </>
-        ),
-        skills: ['Node.js', 'Python', 'TypeScript', 'AWS', 'Docker'],
-        old: false,
-    },
-    {
-        link: 'https://github.com/consultantzero/crypto_tax',
-        title: 'Crypto Tax Calculator',
-        img: 'img/projects/placeholder.jpg',
-        description: (
-            <>
-                Developed a universal CSV-based tool to automate cryptocurrency tax calculations, streamlining transaction imports and reporting.
-            </>
-        ),
-        skills: ['Python', 'TypeScript', 'AWS', 'Docker', 'React'],
-        old: false,
-    },
-    {
         link: '/projects/llm-workflow',
         title: 'LLM Knowledge Indexing Workflow',
         img: 'img/projects/placeholder.jpg',
@@ -70,11 +45,11 @@ export const ProjectList: ProjectItem[] = [
     },
     {
         link: '/projects/damage-inspection-app',
-        title: 'Real-Time Damage Inspection App',
+        title: 'Vehicle Damage Inspection',
         img: 'img/projects/placeholder.jpg',
         description: (
             <>
-                Developed real-time inspection features for MonkApp, cutting inspection time by 75%.
+                Built a Vehicle inspection app, using Computer Vision for automated damage inspection process.
             </>
         ),
         skills: ['React Native', 'TypeScript', 'Node.js', 'CircleCI'],
