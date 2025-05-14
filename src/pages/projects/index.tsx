@@ -15,6 +15,7 @@ export const Project = ({ title, description, img, link, old, skills }: ProjectI
     return (
         <a
             href={link}
+            target="_blank"
             className="card bg-base-100 no-underline shadow-sm border-2 border-gray-400 hover:border-primary hover:opacity-85 hover:cursor-pointer w-full max-w-full"
         >
             <figure className="w-full aspect-[4/3] m-0 p-0">
