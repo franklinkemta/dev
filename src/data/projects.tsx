@@ -11,60 +11,71 @@ type ProjectItem = {
 
 export const ProjectList: ProjectItem[] = [
     {
-        link: '/projects/llm-workflow',
-        title: 'LLM Knowledge Indexing Workflow',
-        img: 'img/projects/placeholder.jpg',
+        link: 'https://pypi.org/project/codeindexer/',
+        title: 'CodeIndexer PIP Package',
+        img: 'img/projects/codeindexer.png',
         description: (
             <>
-                Built a Q/A workflow using LLMs with RAG and Faiss, enhancing knowledge retrieval efficiency.
+                A lightweight CLI to index a codebase and create a context-ready prompt file
             </>
         ),
-        skills: ['Azure AI', 'AWS Bedrock', 'Python', 'Faiss'],
+        skills: ['Codebase', 'Indexing', 'LLMs', 'Context', 'Prompt engineering', 'Productivity'],
     },
     {
-        link: '/projects/edge-ai-migration',
-        title: 'Edge AI Inference Migration',
+        link: 'https://github.com/franklinkemta/oneclick-image-downloader-extension',
+        title: 'OneClick Image Downloader',
+        img: 'https://raw.githubusercontent.com/franklinkemta/oneclick-image-downloader-extension/refs/heads/main/assets/usage-img-1.gif',
+        description: (
+            <>
+                A Chrome extension to download images with one click, saving time on image dataset creation.
+            </>
+        ),
+        skills: ['Images', 'Dataset', 'Annotation', 'Data sourcing', 'Chrome Extension'],
+    },
+    {
+        link: '#',
+        title: 'AI Platform Engineering (WIP)',
         img: 'img/projects/placeholder.jpg',
         description: (
             <>
-                Migrated ML inference to edge GPU devices, cutting latency and GCP costs by 90%.
+                On demand AI agents orchestration, using providers like OpenAI, HuggingFace, Azure AI/Foundry, AWS Bedrock, Google AI studio
             </>
         ),
-        skills: ['PyTorch', 'GCP', 'Terraform', 'Ansible', 'Docker'],
+        skills: ['AI Agents', 'SDKs', 'LLMs', 'Gen AI', 'Platforms', 'Kubernetes', 'Orchestration'],
     },
     {
         link: '/projects/automated-deployment',
-        title: 'Automated Cloud Deployment',
-        img: 'img/projects/placeholder.jpg',
+        title: 'Cloud and Edge AI DevOps',
+        img: 'img/projects/traffic.jpg',
         description: (
             <>
-                Automated AWS/GCP deployments with Terraform, reducing deployment time to minutes.
+                Automating AWS/GCP CI/CD, and Migrating GPU heavy pipelines on Edge Devices for Scalability and Cost reduction
             </>
         ),
-        skills: ['AWS EC2', 'GCP', 'Terraform', 'Ansible', 'Docker'],
+        skills: ['AI', 'DevOps', 'Automation', 'AWS', 'GCP', 'IaC', 'Terrafrom', 'Edge GPU'],
     },
     {
-        link: '/projects/damage-inspection-app',
-        title: 'Vehicle Damage Inspection',
-        img: 'img/projects/placeholder.jpg',
+        link: 'img/projects/mon-k.png',
+        title: 'Vehicle Damage Inspection, Annotation and Reporting',
+        img: 'img/projects/mon-k.webp',
         description: (
             <>
-                Built a Vehicle inspection app, using Computer Vision for automated damage inspection process.
+                Built a Vehicle inspection mobile app, integrating backend APIs for automated damage inspection process.
             </>
         ),
-        skills: ['React Native', 'TypeScript', 'Node.js', 'CircleCI'],
+        skills: ['Computer vision', 'Damages detection', 'Full Stack', 'Startup', 'Team'],
         old: true,
     },
     {
         link: 'https://viize.ca/',
-        title: 'Computer Vision CI/CD Pipeline',
-        img: 'img/projects/traffic.jpg',
+        title: 'Multi-streams processing in realtime using Computer vision',
+        img: 'img/projects/traffic-2.png',
         description: (
             <>
-                Set up CI/CD for AI microservices, halving RAM usage for video processing.
+                Designed and developed a product platform for videos and cameras streams analytics
             </>
         ),
-        skills: ['AWS ECS', 'FastAPI', 'PyTorch', 'Ansible'],
+        skills: ['AWS', 'GCP', 'Edge devices', 'IoT', 'Streams processing', 'AI', 'Vision'],
         old: true,
     },
     {
@@ -76,7 +87,7 @@ export const ProjectList: ProjectItem[] = [
                 Previous Web Development projects using other stacks
             </>
         ),
-        skills: ['Vue.JS', 'Laravel PHP', 'Firebase', 'etc..'],
+        skills: ['Startup', '.NET Framework', 'C#', 'Vue.JS', 'Laravel PHP', 'Firebase', '...'],
         old: true,
     },
 ];
