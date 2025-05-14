@@ -20,12 +20,12 @@ function HeroSection() {
                     </p>
                     <div className="w-full flex gap-6 justify-center">
                         <Link
-                            className="btn btn-outline bg-primary text-base-100 dark:text-white btn-lg rounded-3xl"
+                            className="btn btn-outline no-underline bg-primary text-base-100 dark:text-white btn-lg rounded-3xl"
                             to="https://www.linkedin.com/in/franklinkemta/">
                             Linkedin
                         </Link>
                         <Link
-                            className="btn btn-dash btn-lg rounded-3xl border-2"
+                            className="btn btn-dash no-underline btn-lg rounded-3xl border-2 "
                             to="https://www.github.com/franklinkemta/">
                             Github
                         </Link>
@@ -35,7 +35,7 @@ function HeroSection() {
                     </div>
                 </div>
                 <div className="hidden lg:block md:block">
-                    <a className="tooltip flex w-full hover:animate-pulse" href="https://www.linkedin.com/in/franklinkemta/" target="_blank" data-tip="Hi!">
+                    <a className="tooltip flex w-full hover:animate-pulse no-underline" href="https://www.linkedin.com/in/franklinkemta/" target="_blank" data-tip="Hi!">
                         <div className="avatar">
                             <div className="ring-primary ring-offset-base-100 min-w-60 rounded-full ring-2 ring-offset-2">
                                 <img src="img/logo.svg" />

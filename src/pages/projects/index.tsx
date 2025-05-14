@@ -15,7 +15,7 @@ export const Project = ({ title, description, img, link, old, skills }: ProjectI
     return (
         <a
             href={link}
-            className="card bg-base-100 shadow-sm border-2 border-gray-400 hover:border-primary hover:opacity-85 hover:cursor-pointer w-full max-w-full"
+            className="card bg-base-100 no-underline shadow-sm border-2 border-gray-400 hover:border-primary hover:opacity-85 hover:cursor-pointer w-full max-w-full"
         >
             <figure className="w-full aspect-[4/3] m-0 p-0">
                 <img
@@ -27,10 +27,10 @@ export const Project = ({ title, description, img, link, old, skills }: ProjectI
             </figure>
             <div className="card-body p-4">
                 <h2 className="card-title text-lg">{title}</h2>
-                <p className="text-sm">{description}</p>
+                <p className="text-lg text-primary ">{description}</p>
                 <div className="flex flex-wrap gap-1">
                     {skills?.map((s) => (
-                        <div key={s} className="badge badge-outline badge-primary badge-sm px-2 py-1 mr-1 mb-1">
+                        <div key={s} className="badge badge-outline badge-primary dark:text-gray-400 badge-sm px-2 py-1 mr-1 mb-1">
                             {s}
                         </div>
                     ))}

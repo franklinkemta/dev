@@ -38,18 +38,18 @@ export const ProjectList: ProjectItem[] = [
         img: 'img/projects/placeholder.jpg',
         description: (
             <>
-                On demand AI agents orchestration, using providers like OpenAI, HuggingFace, Azure AI/Foundry, AWS Bedrock, Google AI studio
+                On demand AI agents orchestration API, using providers APIs, OpenAI, Azure AI/Foundry, AWS Bedrock, Google AI studio, HuggingFace
             </>
         ),
         skills: ['AI Agents', 'SDKs', 'LLMs', 'Gen AI', 'Platforms', 'Kubernetes', 'Orchestration'],
     },
     {
         link: '/projects/automated-deployment',
-        title: 'Cloud and Edge AI DevOps',
+        title: 'Cloud to Edge Migration, DevOps, GPU Cost, Scaling AI pipelines',
         img: 'img/projects/traffic.jpg',
         description: (
             <>
-                Automating AWS/GCP CI/CD, and Migrating GPU heavy pipelines on Edge Devices for Scalability and Cost reduction
+                Automating AWS/GCP CI/CD, and Migrating GPU heavy pipelines to Hybrid, Scalable and Cost effective Infrastructure with Edge devices
             </>
         ),
         skills: ['AI', 'DevOps', 'Automation', 'AWS', 'GCP', 'IaC', 'Terrafrom', 'Edge GPU'],
@@ -57,13 +57,13 @@ export const ProjectList: ProjectItem[] = [
     {
         link: 'img/projects/mon-k.png',
         title: 'Vehicle Damage Inspection, Annotation and Reporting',
-        img: 'img/projects/mon-k.webp',
+        img: 'img/projects/mon-k.png',
         description: (
             <>
-                Built a Vehicle inspection mobile app, integrating backend APIs for automated damage inspection process.
+                Built a vehicle inspection app, integrated backend APIs for AI assisted vehicle damage inspection
             </>
         ),
-        skills: ['Computer vision', 'Damages detection', 'Full Stack', 'Startup', 'Team'],
+        skills: ['Computer vision', 'API', 'Full Stack', 'Startup', 'Team', 'Mobile Native', 'OCR'],
         old: true,
     },
     {

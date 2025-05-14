@@ -66,7 +66,7 @@ export default function SkillSection(): ReactNode {
         ))}
       </div>
       <div className="flex flex-col w-full items-center">
-        <a href="/projects" className="btn btn-lg btn-outline border-2 border-primary rounded-3xl">
+        <a href="/projects" className="btn btn-lg btn-outline no-underline border-2 border-primary rounded-3xl">
           View projects
         </a>
       </div>
