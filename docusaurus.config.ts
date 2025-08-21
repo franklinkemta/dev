@@ -67,6 +67,7 @@ const config: Config = {
         },
         docs: {
           sidebarPath: './sidebars.ts',
+          sidebarCollapsed: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: '#',
@@ -104,9 +105,10 @@ const config: Config = {
       items: [
         { to: '/', label: 'About me', position: 'left' },
         { to: '/projects', label: 'Projects', position: 'left' },
+        // { to: '/certifications', label: 'Certifications', position: 'left' },
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'learnSidebar',
           position: 'left',
           label: 'Tutorials',
         },
