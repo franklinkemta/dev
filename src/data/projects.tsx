@@ -35,7 +35,7 @@ export const ProjectList: ProjectItem[] = [
     {
         link: 'https://viize.ca/',
         title: 'AI Platform Engineering (WIP)',
-        img: 'img/projects/viize.webp',
+        img: 'img/projects/viizeca.webp',
         description: (
             <>
                 Automated AI/ML DevOps Training, Inference and Optimization, SDKs OpenAI, Azure AI/Foundry, AWS Bedrock, Google AI studio
