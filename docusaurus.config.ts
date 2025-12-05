@@ -77,6 +77,10 @@ const config: Config = {
           editUrl: '#',
           // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        gtag: { // <--- Add your gtag configuration here!
+          trackingID: 'G-X6K74R8XBD',
+          anonymizeIP: false,
+        },
         // blog: {
         //   showReadingTime: true,
         //   feedOptions: {
