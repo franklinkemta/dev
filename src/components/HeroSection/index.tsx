@@ -16,7 +16,7 @@ function HeroSection() {
                         Hi! I'm Franklin
                     </h3>
                     <p className="text-lg w-full">
-                        I'm an AI DevOps / Project Manager  <br />
+                        I'm an Cloud & AI DevOps <br />
                     </p>
                     <div className="w-full flex gap-6 justify-center">
                         <Link

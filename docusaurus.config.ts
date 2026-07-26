@@ -37,7 +37,7 @@ const config: Config = {
 
   // Enable Docusaurs Faster: https://github.com/facebook/docusaurus/issues/10556
   future: {
-    experimental_faster: true, v4: {
+    faster: true, v4: {
       removeLegacyPostBuildHeadAttribute: true,
     },
   },
