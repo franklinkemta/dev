@@ -36,7 +36,11 @@ const config: Config = {
   },
 
   // Enable Docusaurs Faster: https://github.com/facebook/docusaurus/issues/10556
-  future: { experimental_faster: true },
+  future: {
+    faster: true, v4: {
+      removeLegacyPostBuildHeadAttribute: true,
+    },
+  },
 
   plugins: [
     ['./plugins/tailwind-config.js', {}]
@@ -67,10 +71,15 @@ const config: Config = {
         },
         docs: {
           sidebarPath: './sidebars.ts',
+          sidebarCollapsed: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: '#',
           // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        gtag: { // <--- Add your gtag configuration here!
+          trackingID: 'G-X6K74R8XBD',
+          anonymizeIP: false,
         },
         // blog: {
         //   showReadingTime: true,
@@ -104,9 +113,10 @@ const config: Config = {
       items: [
         { to: '/', label: 'About me', position: 'left' },
         { to: '/projects', label: 'Projects', position: 'left' },
+        // { to: '/certifications', label: 'Certifications', position: 'left' },
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'learnSidebar',
           position: 'left',
           label: 'Tutorials',
         },

@@ -33,18 +33,18 @@ export const ProjectList: ProjectItem[] = [
         skills: ['Images', 'Dataset', 'Annotation', 'Data sourcing', 'Chrome Extension'],
     },
     {
-        link: '#',
+        link: 'https://viize.ca/',
         title: 'AI Platform Engineering (WIP)',
-        img: 'img/projects/placeholder.jpg',
+        img: 'img/projects/viizeca.webp',
         description: (
             <>
-                On demand AI agents orchestration API, using providers APIs, OpenAI, Azure AI/Foundry, AWS Bedrock, Google AI studio, HuggingFace
+                Automated AI/ML DevOps Training, Inference and Optimization, SDKs OpenAI, Azure AI/Foundry, AWS Bedrock, Google AI studio
             </>
         ),
         skills: ['AI Agents', 'SDKs', 'LLMs', 'Gen AI', 'Platforms', 'Kubernetes', 'Orchestration'],
     },
     {
-        link: '/projects/automated-deployment',
+        link: 'https://buttertech.ca',
         title: 'Cloud to Edge Migration, DevOps, GPU Cost, Scaling AI pipelines',
         img: 'img/projects/traffic.jpg',
         description: (
@@ -64,10 +64,10 @@ export const ProjectList: ProjectItem[] = [
             </>
         ),
         skills: ['Computer vision', 'API', 'Full Stack', 'Startup', 'Team', 'Mobile Native', 'OCR'],
-        old: true,
+        old: false,
     },
     {
-        link: 'https://viize.ca/',
+        link: 'https://traffic.buttertech.ca/',
         title: 'Multi-streams processing in realtime using Computer vision',
         img: 'img/projects/traffic-2.png',
         description: (
@@ -76,7 +76,7 @@ export const ProjectList: ProjectItem[] = [
             </>
         ),
         skills: ['AWS', 'GCP', 'Edge devices', 'IoT', 'Streams processing', 'AI', 'Vision'],
-        old: true,
+        old: false,
     },
     {
         link: 'https://drive.google.com/file/d/1dy_2kxsBhMi5EKa8fJJatS0Z7RUea7OS/view',

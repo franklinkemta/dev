@@ -10,7 +10,7 @@ const SkillList: SkillItem[] = [
     title: 'Cloud Platform Engineering',
     description: (
       <>
-        AWS (preferred), Azure, GCP, IaC, CI/CD, Automation
+        AWS, Microsoft Azure, GCP, IaC, CI/CD, Automation
       </>
     ),
   },
@@ -27,7 +27,7 @@ const SkillList: SkillItem[] = [
 
 const SecondarySkillList: SkillItem[] = [
   {
-    title: 'I\'ve worked on several Full Stack development projects using',
+    title: 'I\'ve worked on several Technical Projects using',
     description: (
       <>
         <code>Python</code>, <code>C# .NET</code>, <code>Node.Js</code>, <code>React</code> and <code>TypeScript</code>

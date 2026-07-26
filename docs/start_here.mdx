@@ -23,14 +23,18 @@ export const TopicCard = ({ title, desc, link = '#' }) => (
 
 # Getting started <Construction color="orange" />
 
-<p className="text-lg font-medium"> <br /> Let's introduce the topics I would like to share about. </p>
+<p className="text-lg font-medium"> <br /> Let's introduce the topics you'll find here. </p>
 
 <div className="divider"/>
 ## Choose a Topic
 
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-    <TopicCard title="Cloud Computing basics" desc="Learn the critical component of the modern cloud infrastructure" />
+    <TopicCard 
+        title="Cloud Architectures" 
+        desc="Learn about different Cloud, AI and High Performance Compute (HPC) Best practices"
+        link="/docs/cloud-architectures"
+    />
 </div>
 
 <div className="divider"/>
-<span> (<Construction size={16} color="orange" /> Work in progress) </span>
+<span> (<Construction size={16} color="orange" /> This Work is in progress) </span>
